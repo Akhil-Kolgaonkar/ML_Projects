@@ -1,17 +1,24 @@
-# .github/workflows/example-2.yml
-
-name: Manual Inputs
-on: 
+name: Manual Trigger Workflow
+on:
   workflow_dispatch:
     inputs:
-      version:
-        description: Bump Version
-        default: v1.0.0
+      branch:
+        description: 'The branch to build'
         required: true
+      environment:
+        description: 'The environment to deploy to'
+        required: false
 jobs:
-  bump-version:
-    name: Bump Package Version
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Example variable usage
-        run: git tag ${{ github.event.inputs.version }}
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Build project
+        run: |
+          npm install
+          npm run build --branch ${{ github.event.inputs.branch }}
+      - name: Deploy Project
+        uses: my-deploy-action@v1
+        with:
+          environment: ${{ github.event.inputs.environment }}
