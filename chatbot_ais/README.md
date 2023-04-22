@@ -23,4 +23,6 @@
     * Add new QA / update existing QA in datasets in realtime. 
     * USE KEYWORD 'aadfaq' to add/update QA 
     * duplicate & casesensetive QA issue fix 
-    * Final Model AI works with .csv dataset.
+    * Final Model AI 
+
+### All AI Models works with .csv dataset.
