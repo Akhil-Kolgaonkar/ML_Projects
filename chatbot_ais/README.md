@@ -1,4 +1,4 @@
-## AI Models primary function : Chatbots  
+## AI Models - primary function : Chatbots  
 ### Features of AI Models :  
 
 1. AkhilgenixAI - 
