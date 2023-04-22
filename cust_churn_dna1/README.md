@@ -10,7 +10,7 @@ Identify patterns and correlations between variables that may be related to cust
 Build predictive models to identify factors that contribute to customer churn and make recommendations for improving customer retention.
 To complete this project, you'll need to use data analysis tools such as pandas, NumPy, and scikit-learn. You'll also need to have knowledge of statistical analysis and machine learning techniques. This project can be a great way to showcase your skills as a data analyst and demonstrate your ability to provide valuable insights to businesses.  
 ```
-Below is code for a customer churn analysis project using Python and scikit-learn library for building a predictive model:
+Below is code output for a customer churn analysis project using Python and scikit-learn library for building a predictive model:
 ```
 ## 1. pie chart of the churn distribution
 ![piechart churn](https://github.com/Akhil-Kolgaonkar/ML_Projects/blob/main/cust_churn_dna1/Figure_1.png)
